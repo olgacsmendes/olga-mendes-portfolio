@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="styles.css" />
 		<title>Olga Mendes - Front-End Developer</title>
 	</head>
+
 	<body>
 		<nav id="navbar">
 			<div class="logo">Olga Mendes</div>
@@ -15,7 +16,9 @@
 					<li><a href="#education" onclick="toggleMenu()">Formação</a></li>
 					<li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
 					<li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-					<li><a class="language"href="#" onclick="changeLanguage()">EN</a></li>
+					<li>
+						<a class="language" href="#" onclick="changeLanguage()">EN</a>
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -35,39 +38,97 @@
 						<li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
 					</ul>
 				</div>
-				<a class="language"href="#" onclick="changeLanguage()">EN</a>
+				<!--Em breve: Troca de idioma-->
 			</div>
 		</nav>
 		<section id="profile">
 			<div class="section-pic-container">
-				<img src="./assets/profile-pic.jpg" alt="Foto de Olga Mendes" id="me">
+				<img
+					src="./assets/profile-pic.jpg"
+					alt="Foto de Olga Mendes"
+					class="me" />
 			</div>
 			<div class="section-text">
 				<p class="section-text-p1">Olá, sou</p>
 				<h1 class="title">Olga Mendes</h1>
 				<p class="section-text-p2">Desenvolvedora Front-End</p>
 				<div class="btn-container">
-					<button class="btn btn-color-2" 
-					onclick="window.open('./assets/CV-OlgaMendes.pdf');">
-					Baixar CV
+					<button
+						class="btn btn-color-2"
+						onclick="window.open('./assets/CV-OlgaMendes.pdf');">
+						Baixar CV
 					</button>
-					<button class="btn btn-color-1" 
-					onclick="location.href='#contact'">
-					Fale comigo
+					<button class="btn btn-color-1" onclick="location.href='#contact'">
+						Fale comigo
 					</button>
 				</div>
 				<div id="socials">
-					<img src="./assets/github.png"
-					alt="GitHub"
-					class="icon"
-					onclick="window.open('https://github.com/olgacsmendes');">
-					<img src="./assets/linkedin.png"
-					alt="LinkedIn" 
-					class="icon" 
-					onclick="window.open('https://www.linkedin.com/in/olga-mendes/');">
-
+					<img
+						src="./assets/github.png"
+						alt="GitHub"
+						class="icon"
+						onclick="window.open('https://github.com/olgacsmendes');" />
+					<img
+						src="./assets/linkedin.png"
+						alt="LinkedIn"
+						class="icon"
+						onclick="window.open('https://www.linkedin.com/in/olga-mendes/');" />
 				</div>
 			</div>
+		</section>
+		<section id="about">
+			<p class="section-text-p1">Saiba mais</p>
+			<h1 class="title">Sobre mim</h1>
+			<div class="section-container">
+				<div class="section-pic-container">
+					<img
+						src="./assets/about-me.jpg"
+						alt="Profile picture"
+						class="about-pic" />
+				</div>
+				<div class="about-details-container">
+					<div class="about-containers">
+						<div class="details-container">
+							<img
+								src="./assets/experience.png"
+								alt="Experience icon"
+								class="icon" />
+							<h3>Experiência</h3>
+							<p>
+								Estou em transição de carreira. Buscando minha primeira
+								oportunidade na tecnologia.
+							</p>
+						</div>
+						<div class="details-container">
+							<img
+								src="./assets/education.png"
+								alt="Education icon"
+								class="icon" />
+							<h3>Formação</h3>
+							<p>
+								Tecnólogo em Análise e Desenv. de Sistemas<br />
+								<em>Set/23 - Atual</em><br />
+								Unifatecie
+							</p>
+						</div>
+					</div>
+					<div class="text-container">
+						<p>
+							Possuo habilidades em HTML, CSS, Javascript, breve experiência em
+							Bootstrap e React e noções básicas em Java e Springboot.
+							Comunicativa e comprometida, aprecio o trabalho em equipe, sempre
+							disposta a aprender e ajudar da melhor forma possível. Fluente em
+							inglês. Não tenho medo de desafios.<br><strong>Dificuldades não me assustam,
+							me impulsionam!</strong>
+						</p>
+					</div>
+				</div>
+			</div>
+			<img
+				src="./assets/arrow.png"
+				alt="Arrow icon"
+				class="icon arrow"
+				onclick="location.href='./#experience'" />
 		</section>
 		<script src="script.js"></script>
 	</body>
