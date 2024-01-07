@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Olga Mendes - Front-End Developer</title>
+	</head>
+	<body>
+		<nav id="navbar">
+			<div class="logo">Olga Mendes</div>
+			<div>
+				<ul class="nav-links">
+					<li><a href="#about">Sobre</a></li>
+					<li><a href="#education">Formação</a></li>
+					<li><a href="#projects">Projetos</a></li>
+					<li><a href="#contact">Contato</a></li>
+				</ul>
+			</div>
+		</nav>
+		<nav id="sub-nav">
+			<div class="logo">Olga Mendes</div>
+			<div class="sub-menu">
+				<div class="sub-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                    <li><a href="#education" onclick="toggleMenu()">Formação</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+                </div>
+            </div>
+		</nav>
+
+		<script src="script.js"></script>
+	</body>
+</html>
