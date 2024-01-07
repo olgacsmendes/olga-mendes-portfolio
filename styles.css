@@ -94,7 +94,7 @@ a:hover {
 }
 
 .menu-links a {
-    display: block;
+    display: flexbox;
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
@@ -102,6 +102,12 @@ a:hover {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
+
+.language {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 
 .menu-links li {
     list-style: none;
@@ -143,6 +149,13 @@ a:hover {
     }
     #sub-nav {
         display: flex;
+    }
+
+    .sub-menu {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 1.5rem;
     }
     
 }

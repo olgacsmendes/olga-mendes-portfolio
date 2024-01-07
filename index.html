@@ -11,10 +11,11 @@
 			<div class="logo">Olga Mendes</div>
 			<div>
 				<ul class="nav-links">
-					<li><a href="#about">Sobre</a></li>
-					<li><a href="#education">Formação</a></li>
-					<li><a href="#projects">Projetos</a></li>
-					<li><a href="#contact">Contato</a></li>
+					<li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+					<li><a href="#education" onclick="toggleMenu()">Formação</a></li>
+					<li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+					<li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+					<li><a class="language"href="#" onclick="changeLanguage()">EN</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -27,14 +28,26 @@
 					<span></span>
 				</div>
 				<div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
-                    <li><a href="#education" onclick="toggleMenu()">Formação</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-                </div>
-            </div>
+					<ul>
+						<li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+						<li><a href="#education" onclick="toggleMenu()">Formação</a></li>
+						<li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+						<li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+					</ul>
+				</div>
+				<a class="language"href="#" onclick="changeLanguage()">EN</a>
+			</div>
 		</nav>
-
+		<section id="profile">
+			<div class="section-pic-container">
+				<img src="./assets/profile-pic.jpg" alt="Foto de Olga Mendes">
+			</div>
+			<div class="section-text">
+				<p class="section-text-p1">Olá, sou</p>
+				<h1 class="title">Olga Mendes</h1>
+				<p class="section-text-p2">Front-End Developer</p>
+			</div>
+		</section>
 		<script src="script.js"></script>
 	</body>
 </html>
