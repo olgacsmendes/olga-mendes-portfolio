@@ -40,12 +40,33 @@
 		</nav>
 		<section id="profile">
 			<div class="section-pic-container">
-				<img src="./assets/profile-pic.jpg" alt="Foto de Olga Mendes">
+				<img src="./assets/profile-pic.jpg" alt="Foto de Olga Mendes" id="me">
 			</div>
 			<div class="section-text">
 				<p class="section-text-p1">Olá, sou</p>
 				<h1 class="title">Olga Mendes</h1>
-				<p class="section-text-p2">Front-End Developer</p>
+				<p class="section-text-p2">Desenvolvedora Front-End</p>
+				<div class="btn-container">
+					<button class="btn btn-color-2" 
+					onclick="window.open('./assets/CV-OlgaMendes.pdf');">
+					Baixar CV
+					</button>
+					<button class="btn btn-color-1" 
+					onclick="location.href='#contact'">
+					Fale comigo
+					</button>
+				</div>
+				<div id="socials">
+					<img src="./assets/github.png"
+					alt="GitHub"
+					class="icon"
+					onclick="window.open('https://github.com/olgacsmendes');">
+					<img src="./assets/linkedin.png"
+					alt="LinkedIn" 
+					class="icon" 
+					onclick="window.open('https://www.linkedin.com/in/olga-mendes/');">
+
+				</div>
 			</div>
 		</section>
 		<script src="script.js"></script>
