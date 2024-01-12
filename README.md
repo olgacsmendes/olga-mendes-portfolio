@@ -49,10 +49,6 @@ Se você deseja contribuir para este projeto, sinta-se à vontade para criar pul
 - **LinkedIn**: [Olga Mendes](https://www.linkedin.com/in/olga-mendes/)
 - **GitHub**: [olgacsmendes](https://github.com/olgacsmendes/)
 
-## Licença
-
-Este projeto é licenciado sob a [Licença MIT](LICENSE).
-
 ---
 
 **Copyright © 2024 Olga Mendes. Todos os direitos reservados.**
