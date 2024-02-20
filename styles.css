@@ -168,10 +168,9 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
+  height: 100%;
+  margin: 0 6rem;
   box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section-container {
@@ -302,6 +301,7 @@ section {
 
 .about-containers {
   gap: 2rem;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
@@ -320,11 +320,6 @@ section {
   border-radius: 2rem;
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
 
 .details-container {
   padding: 1.5rem;
@@ -350,6 +345,7 @@ section {
 
 #skills {
   position: relative;
+  margin: 6rem auto auto auto;
 }
 
 .skills-sub-title {
@@ -367,6 +363,9 @@ h3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 0;
+  flex-wrap: wrap;
+  padding: 0 10rem;
 }
 
 .article-container {
@@ -392,7 +391,8 @@ article .icon {
 /* PROJECTS SECTION */
 
 #projects {
-  position: relative;
+  margin: 6rem auto auto auto;
+  padding: 0;
 }
 
 .color-container {
@@ -416,13 +416,17 @@ article .icon {
   border-color: var(--dark);
 }
 
+.desc {
+  padding: 10px 20px;
+}
+
 /* CONTACT */
 
 #contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  margin: 6rem auto auto auto;
 }
 
 .contact-info-upper-container {
@@ -475,14 +479,41 @@ footer p {
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
-    margin-bottom: 6rem;
+    margin-bottom: 5rem;
+  }
+  #about {
+    padding: 0 2rem;
   }
   .about-containers {
-    flex-wrap: wrap;
+    margin: 1rem auto auto auto;
+    padding: 0;
+  }
+  .text-container {
+    margin: 1rem 0 0 0;
   }
   #contact,
   #projects {
-    height: fit-content;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: -8rem;
+  }
+  #contact {
+    margin: 5rem 0 0 0;
+  }
+  #projects {
+    margin: 15rem auto auto auto;
+    padding: auto 10rem;
+  }
+  #skills {
+    margin: 6rem auto;
+  }
+  footer {
+    position: relative;
+    top: -5rem;
+  }
+  .copyright {
+    margin-top: 4rem;
   }
 }
 
@@ -495,53 +526,124 @@ footer p {
   }
   #skills,
   .skills-details-container {
-    margin-top: 1rem;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    gap: 2rem;
+    text-align: center;
+  }
+  #skills {
+    top: 2rem;
+    padding: 0 7rem;
+  }
+
+  #projects {
+    margin: 0;
+    padding: 0 7rem;
+    top: 8rem;
   }
   #profile,
   .section-container {
     display: block;
   }
-  .arrow {
-    display: none;
+  #about {
+    padding: 0;
+    top: 12rem;
   }
-  section,
   .section-container {
-    height: fit-content;
-  }
-  section {
-    margin: 0 5%;
+    display: flex;
   }
   .section-pic-container {
     width: 275px;
     height: 275px;
-    margin: 0 auto 2rem;
+    margin: 6rem auto 2rem auto;
   }
   .about-containers {
-    margin-top: 0;
+    margin-top: 2rem;
+    padding: 0;
   }
-
+  .skills-details-container {
+    margin: -0.5rem auto auto auto;
+    padding: 0;
+  }
+  .text-container {
+    text-align: justify;
+    padding: 0;
+    margin: 2rem 0 15rem 0;
+  }
+  #contact {
+    top: 4rem;
+    z-index: 1;
+  }
+  .nav-links-container {
+    margin: 9rem auto auto auto;
+  }
+  .copyright {
+    margin: 6rem auto auto auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  #contact,
-  footer {
-    height: 40vh;
+  #contact {
+    height: 100%;
+    position: relative;
+    top: 12rem;
   }
   #profile {
     height: 83vh;
     margin-bottom: 0;
   }
+  #about {
+    padding: 0 2rem;
+    margin: 0;
+  }
+
+  #skills {
+    top: 12rem;
+    margin: 0;
+    padding: 0 2rem;
+  }
+
+  .skills-details-container {
+    padding: 0;
+  }
   article {
     font-size: 1rem;
   }
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
+  footer, nav {
+    position: relative;
+  }
+  .nav-links-container {
+    position: relative;
+    top: 8rem;
+  }
+  .copyright {
+    position: relative;
+    top: 16rem;
   }
   .about-containers,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
+  }
+
+  #projects {
+    top: 16rem;
+    padding: 0 2rem;
+    margin: 0 0 7rem 0;
+  }
+  .about-pic {
+    width: auto;
+    height: 15rem;
+    margin: -4rem 0 auto 0;
+  }
+  .section-container {
+    position: relative;
+    justify-items: center;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
   }
   .contact-info-container {
     margin: 0.1rem;
@@ -575,5 +677,8 @@ footer p {
   }
   .text-container {
     text-align: justify;
+    margin: 2rem 0 5rem 0;
+    padding: 0;
   }
+
 }
